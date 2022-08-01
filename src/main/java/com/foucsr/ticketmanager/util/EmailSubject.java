@@ -43,6 +43,8 @@ public class EmailSubject {
 	private static EncryptionUtil encryptionUtil;
 	
 	private boolean isHTML;
+	
+	private String host ;
 		
 //	private static long userId;
 
@@ -80,10 +82,19 @@ public class EmailSubject {
 			
 			emailTextObject.username = emailDetails.getUsername();
 			emailTextObject.password = emailDetails.getPassword();
+			emailTextObject.host = emailDetails.getSmtp_host();
 
 //		}
 
 		return emailTextObject;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
 	}
 
 	public void init(String emailFrom, List<String> emailTo, List<String> emailCC, List<File> files,
@@ -105,7 +116,7 @@ public class EmailSubject {
 		EmailSubject.emailTextObject = emailTextObject;
 	}
 
-	public static Properties getProps() {
+	public Properties getProps() {
 		return props;
 	}
 

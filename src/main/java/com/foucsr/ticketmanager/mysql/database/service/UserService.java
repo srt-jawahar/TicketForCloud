@@ -1,7 +1,10 @@
 package com.foucsr.ticketmanager.mysql.database.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import javax.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,10 +45,10 @@ public class UserService {
 	}
 	
 
-	public ResponseEntity<?> activeOrInactiveUser(DeleteUserRequest deleteRequest) {
+	@SuppressWarnings("null")
+	public ResponseEntity<?> activeOrInactiveUser(@Valid DeleteUserRequest deleteRequest) {
 
 		SCAUtil prUtil = new SCAUtil();
-		
 		Long user_id = deleteRequest.getId();
 		char activeOrInactive = deleteRequest.getIs_Active();
 		
@@ -62,7 +65,7 @@ public class UserService {
 			user.setIs_Active(activeOrInactive);
 			
 			usersRepository.save(user);
-			
+		
 		} catch (Exception e) {
 
 			logger.error("***************** Unable to Active/Inactive the user!  *********************\n" + e);

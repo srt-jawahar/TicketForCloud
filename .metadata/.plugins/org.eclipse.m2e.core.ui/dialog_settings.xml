@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Eclipse\Client_Workspace\supportsquad"/>
 			<item value="E:\New folder\supportsquad"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -20,6 +20,8 @@ public interface EmailDetailsRepository extends JpaRepository<EmailDetails, Long
 	
 	 @Query(value = "select * from EMAIL_DETAILS", nativeQuery = true)
 	 Optional<EmailDetails> findOneEmailDetails();
- 
+     
+	 @Query(value = " select * from EMAIL_DETAILS", nativeQuery = true)
+	 EmailDetails findOne();
 
 }
