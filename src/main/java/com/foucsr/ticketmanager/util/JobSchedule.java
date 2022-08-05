@@ -22,7 +22,7 @@ public class JobSchedule {
 
 		try {
 			
-			log.info("Scheduler Running on every 3 minutes " + "\n");
+			log.info("Scheduler Running on every 1 minutes " + "\n");
 			
 			receivedMail.receiveEmail(emailSubject);
 			

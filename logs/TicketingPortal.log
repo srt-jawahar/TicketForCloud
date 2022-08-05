@@ -1,360 +1,1107 @@
-2022-07-29 15:19:08 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:19:09 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
-2022-07-29 15:19:10 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Initializing ProtocolHandler ["http-nio-9090"]
-2022-07-29 15:19:11 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting service [Tomcat]
-2022-07-29 15:19:11 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting Servlet Engine: Apache Tomcat/8.5.34
-2022-07-29 15:19:11 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Python310\Scripts\;C:\Python310\;%AppData%\npm;C:\ProgramData\chocolatey\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Saishiva\node;C:\Users\Saishiva\AppData\Roaming\Git;C:\Users\Saishiva\apache-maven\bin;C:\Users\Saishiva\AppData\Local\Microsoft\WindowsApps;C:\Users\Saishiva\AppData\Roaming\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Users\Saishiva\AppData\Git\cmd;C:\Users\Saishiva\AppData\Roaming\Git\cmd;C:\Users\Saishiva\AppData\Local\Programs\Microsoft VS Code\bin;D:\Eclipse\eclipse;;.]
-2022-07-29 15:19:11 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - Initializing Spring embedded WebApplicationContext
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:495) - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:11:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:11:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Initializing ProtocolHandler ["http-nio-9090"]
+2022-08-05 10:11:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting service [Tomcat]
+2022-08-05 10:11:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting Servlet Engine: Apache Tomcat/8.5.34
+2022-08-05 10:11:57 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Python310\Scripts\;C:\Python310\;%AppData%\npm;C:\ProgramData\chocolatey\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Saishiva\node_modules;C:\Users\Saishiva\AppData\Roaming\Git;C:\Users\Saishiva\apache-maven\bin;C:\Windows\system32\wmic.exe;C:\Users\Saishiva\node\node_modules\npm;C:\Users\Saishiva\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Saishiva\AppData\Local\Microsoft\WindowsApps;C:\Users\Saishiva\AppData\Roaming\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Git\cmd;C:\Users\Saishiva\AppData\Roaming\Git\cmd;C:\Users\Saishiva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Roaming\npm;D:\Eclipse\eclipse;;.]
+2022-08-05 10:11:57 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - Initializing Spring embedded WebApplicationContext
+2022-08-05 10:11:57 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:495) - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: TicketManager
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7d589b71
+
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1119) - HikariPool-1 - configuration:
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - allowPoolSuspension.............false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - autoCommit......................true
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - catalog.........................none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionInitSql...............none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTestQuery.............none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTimeout...............30000
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSource......................none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceClassName.............none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceJNDI..................none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceProperties............{password=<masked>}
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - driverClassName................."com.mysql.jdbc.Driver"
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckProperties...........{}
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckRegistry.............none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - idleTimeout.....................600000
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailFast..........true
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailTimeout.......1
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - isolateInternalQueries..........false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbc4ConnectionTest.............false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbcUrl.........................jdbc:mysql://122.165.191.124:3306/ticket_manager_dev?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - leakDetectionThreshold..........0
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maxLifetime.....................1800000
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maximumPoolSize.................10
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricRegistry..................none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricsTrackerFactory...........none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - minimumIdle.....................10
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - password........................<masked>
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - poolName........................"HikariPool-1"
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - readOnly........................false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - registerMbeans..................false
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutor...............none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutorService........internal
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - schema..........................none
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - threadFactory...................internal
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - transactionIsolation............default
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - username........................"demo"
+2022-08-05 10:11:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - validationTimeout...............5000
+2022-08-05 10:11:58 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:110) - HikariPool-1 - Starting...
+2022-08-05 10:11:59 DEBUG [localhost-startStop-1] (c.z.hikari.pool.PoolBase:379) - HikariPool-1 - Failed to create/setup connection: Public Key Retrieval is not allowed
+2022-08-05 10:11:59 DEBUG [localhost-startStop-1] (c.z.h.pool.HikariPool:480) - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:00 ERROR [localhost-startStop-1] (c.z.h.pool.HikariPool:567) - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:00 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Stopping service [Tomcat]
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:24 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:12:26 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Initializing ProtocolHandler ["http-nio-9090"]
+2022-08-05 10:12:26 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting service [Tomcat]
+2022-08-05 10:12:26 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting Servlet Engine: Apache Tomcat/8.5.34
+2022-08-05 10:12:26 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Python310\Scripts\;C:\Python310\;%AppData%\npm;C:\ProgramData\chocolatey\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Saishiva\node_modules;C:\Users\Saishiva\AppData\Roaming\Git;C:\Users\Saishiva\apache-maven\bin;C:\Windows\system32\wmic.exe;C:\Users\Saishiva\node\node_modules\npm;C:\Users\Saishiva\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Saishiva\AppData\Local\Microsoft\WindowsApps;C:\Users\Saishiva\AppData\Roaming\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Git\cmd;C:\Users\Saishiva\AppData\Roaming\Git\cmd;C:\Users\Saishiva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Roaming\npm;D:\Eclipse\eclipse;;.]
+2022-08-05 10:12:26 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - Initializing Spring embedded WebApplicationContext
+2022-08-05 10:12:26 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:495) - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
   context: TicketManager
   delegate: true
 ----------> Parent Classloader:
 org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7cb86968
 
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1119) - HikariPool-1 - configuration:
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - allowPoolSuspension.............false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - autoCommit......................true
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - catalog.........................none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionInitSql...............none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTestQuery.............none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTimeout...............30000
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSource......................none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceClassName.............none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceJNDI..................none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceProperties............{password=<masked>}
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - driverClassName................."com.mysql.jdbc.Driver"
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckProperties...........{}
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckRegistry.............none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - idleTimeout.....................600000
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailFast..........true
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailTimeout.......1
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - isolateInternalQueries..........false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbc4ConnectionTest.............false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbcUrl.........................jdbc:mysql://122.165.191.124:3306/ticket_manager_dev?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - leakDetectionThreshold..........0
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maxLifetime.....................1800000
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maximumPoolSize.................10
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricRegistry..................none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricsTrackerFactory...........none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - minimumIdle.....................10
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - password........................<masked>
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - poolName........................"HikariPool-1"
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - readOnly........................false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - registerMbeans..................false
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutor...............none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutorService........internal
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - schema..........................none
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - threadFactory...................internal
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - transactionIsolation............default
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - username........................"demo"
-2022-07-29 15:19:11 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - validationTimeout...............5000
-2022-07-29 15:19:11 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:110) - HikariPool-1 - Starting...
-2022-07-29 15:19:12 DEBUG [localhost-startStop-1] (c.z.h.pool.HikariPool:538) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4db3a1f7
-2022-07-29 15:19:12 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:123) - HikariPool-1 - Start completed.
-2022-07-29 15:19:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
-2022-07-29 15:19:13 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@47d68778
-2022-07-29 15:19:13 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@331c3022
-2022-07-29 15:19:13 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@fb3df70
-2022-07-29 15:19:14 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@58b9cfe1
-2022-07-29 15:19:14 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6d6c3dd3
-2022-07-29 15:19:15 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2d1b714d
-2022-07-29 15:19:15 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@135262d8
-2022-07-29 15:19:15 DEBUG [localhost-startStop-1] (o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean:77) - Initializing JpaMetamodelMappingContext…
-2022-07-29 15:19:15 DEBUG [localhost-startStop-1] (o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean:84) - Finished initializing JpaMetamodelMappingContext!
-2022-07-29 15:19:15 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@25d0f7c7
-2022-07-29 15:19:15 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.UserRepository…
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByResetToken
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByResetToken
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByResetToken
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByFirstNameAndLastName
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findUser
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByIdIn
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByIdIn
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByIdIn
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByVendorId
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByUsernameOrEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByUsernameOrEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByUsernameOrEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findListOfUsers
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByAgentId
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method existsByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.existsByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.existsByUsername
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method existsByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.existsByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.existsByEmail
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findUserByIdToActiveOrInactive
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findFirstAdmin
-2022-07-29 15:19:16 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2348664f
-2022-07-29 15:19:16 DEBUG [HikariPool-1 connection adder] (c.z.h.pool.HikariPool:404) - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.UserRepository.
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository…
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findOneEmailDetails
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findOne
-2022-07-29 15:19:16 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository.
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.AgentRepository…
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findListOfAgents
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findAgentById
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.AgentRepository.
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.RoleRepository…
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByName
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query Role.findByName
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query Role.findByName
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.RoleRepository.
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository…
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findGroupAgentsByName
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findGroupAgentsById
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository.
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository…
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findBusinessFunctionsById
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository.
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository…
-2022-07-29 15:19:16 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository.
-2022-07-29 15:19:17 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository…
-2022-07-29 15:19:17 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository.
-2022-07-29 15:19:18 INFO  [pool-2-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:19:18 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting ProtocolHandler ["http-nio-9090"]
-2022-07-29 15:19:18 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Using a shared selector for servlet write/read
-2022-07-29 15:19:42 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:20:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:20:42 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:20:58 INFO  [pool-2-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:21:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:21:42 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:22:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:22:38 INFO  [pool-2-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:22:42 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:23:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:23:42 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:24:12 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:24:18 INFO  [pool-2-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
-2022-07-29 15:33:52 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
-2022-07-29 15:33:53 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Initializing ProtocolHandler ["http-nio-9090"]
-2022-07-29 15:33:53 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting service [Tomcat]
-2022-07-29 15:33:53 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting Servlet Engine: Apache Tomcat/8.5.34
-2022-07-29 15:33:53 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Python310\Scripts\;C:\Python310\;%AppData%\npm;C:\ProgramData\chocolatey\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Saishiva\node;C:\Users\Saishiva\AppData\Roaming\Git;C:\Users\Saishiva\apache-maven\bin;C:\Users\Saishiva\AppData\Local\Microsoft\WindowsApps;C:\Users\Saishiva\AppData\Roaming\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Users\Saishiva\AppData\Git\cmd;C:\Users\Saishiva\AppData\Roaming\Git\cmd;C:\Users\Saishiva\AppData\Local\Programs\Microsoft VS Code\bin;D:\Eclipse\eclipse;;.]
-2022-07-29 15:33:54 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - Initializing Spring embedded WebApplicationContext
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:495) - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1119) - HikariPool-1 - configuration:
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - allowPoolSuspension.............false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - autoCommit......................true
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - catalog.........................none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionInitSql...............none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTestQuery.............none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTimeout...............30000
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSource......................none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceClassName.............none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceJNDI..................none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceProperties............{password=<masked>}
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - driverClassName................."com.mysql.jdbc.Driver"
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckProperties...........{}
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckRegistry.............none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - idleTimeout.....................600000
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailFast..........true
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailTimeout.......1
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - isolateInternalQueries..........false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbc4ConnectionTest.............false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbcUrl.........................jdbc:mysql://122.165.191.124:3306/ticket_manager_dev?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - leakDetectionThreshold..........0
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maxLifetime.....................1800000
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maximumPoolSize.................10
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricRegistry..................none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricsTrackerFactory...........none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - minimumIdle.....................10
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - password........................<masked>
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - poolName........................"HikariPool-1"
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - readOnly........................false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - registerMbeans..................false
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutor...............none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutorService........internal
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - schema..........................none
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - threadFactory...................internal
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - transactionIsolation............default
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - username........................"demo"
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - validationTimeout...............5000
+2022-08-05 10:12:27 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:110) - HikariPool-1 - Starting...
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.hikari.pool.PoolBase:379) - HikariPool-1 - Failed to create/setup connection: Public Key Retrieval is not allowed
+2022-08-05 10:12:27 DEBUG [localhost-startStop-1] (c.z.h.pool.HikariPool:480) - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:28 ERROR [localhost-startStop-1] (c.z.h.pool.HikariPool:567) - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:28 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Stopping service [Tomcat]
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:121) - Scanning for repositories in packages com.foucsr.ticketmanager.mysql.database.repository.
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: roleRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.RoleRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: screensRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: unassignedTicketTimeRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: groupAgentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: userRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.UserRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: emailDetailsRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: businessFunctionRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: agentRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.AgentRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:142) - Spring Data JPA - Registering repository: slaRepository - Interface: com.foucsr.ticketmanager.mysql.database.repository.SlaRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+2022-08-05 10:12:55 DEBUG [restartedMain] (o.s.d.r.c.RepositoryConfigurationDelegate:153) - Finished repository scanning.
+2022-08-05 10:12:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Initializing ProtocolHandler ["http-nio-9090"]
+2022-08-05 10:12:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting service [Tomcat]
+2022-08-05 10:12:57 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting Servlet Engine: Apache Tomcat/8.5.34
+2022-08-05 10:12:57 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_321\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin/server;C:/Users/Saishiva/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416/jre/bin;C:\Python310\Scripts\;C:\Python310\;%AppData%\npm;C:\ProgramData\chocolatey\bin;C:\Users\Saishiva\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_321\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Saishiva\node_modules;C:\Users\Saishiva\AppData\Roaming\Git;C:\Users\Saishiva\apache-maven\bin;C:\Windows\system32\wmic.exe;C:\Users\Saishiva\node\node_modules\npm;C:\Users\Saishiva\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Saishiva\AppData\Local\Microsoft\WindowsApps;C:\Users\Saishiva\AppData\Roaming\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Git\cmd;C:\Users\Saishiva\AppData\Roaming\Git\cmd;C:\Users\Saishiva\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Saishiva\AppData\Roaming\npm;D:\Eclipse\eclipse;;.]
+2022-08-05 10:12:57 INFO  [localhost-startStop-1] (o.a.j.l.DirectJDKLog:180) - Initializing Spring embedded WebApplicationContext
+2022-08-05 10:12:57 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:495) - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
   context: TicketManager
   delegate: true
 ----------> Parent Classloader:
-org.springframework.boot.devtools.restart.classloader.RestartClassLoader@36de028b
+org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e15ca06
 
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1119) - HikariPool-1 - configuration:
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - allowPoolSuspension.............false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - autoCommit......................true
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - catalog.........................none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionInitSql...............none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTestQuery.............none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTimeout...............30000
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSource......................none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceClassName.............none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceJNDI..................none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceProperties............{password=<masked>}
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - driverClassName................."com.mysql.jdbc.Driver"
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckProperties...........{}
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckRegistry.............none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - idleTimeout.....................600000
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailFast..........true
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailTimeout.......1
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - isolateInternalQueries..........false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbc4ConnectionTest.............false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbcUrl.........................jdbc:mysql://122.165.191.124:3306/ticket_manager_dev?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - leakDetectionThreshold..........0
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maxLifetime.....................1800000
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maximumPoolSize.................10
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricRegistry..................none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricsTrackerFactory...........none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - minimumIdle.....................10
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - password........................<masked>
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - poolName........................"HikariPool-1"
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - readOnly........................false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - registerMbeans..................false
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutor...............none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutorService........internal
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - schema..........................none
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - threadFactory...................internal
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - transactionIsolation............default
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - username........................"demo"
-2022-07-29 15:33:54 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - validationTimeout...............5000
-2022-07-29 15:33:54 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:110) - HikariPool-1 - Starting...
-2022-07-29 15:33:55 DEBUG [localhost-startStop-1] (c.z.h.pool.HikariPool:538) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2b76712e
-2022-07-29 15:33:55 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:123) - HikariPool-1 - Start completed.
-2022-07-29 15:33:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
-2022-07-29 15:33:56 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@66f4a955
-2022-07-29 15:33:56 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@121f1927
-2022-07-29 15:33:56 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@e612c20
-2022-07-29 15:33:57 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@4afa1983
-2022-07-29 15:33:57 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@6abe368f
-2022-07-29 15:33:58 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@5714797
-2022-07-29 15:33:58 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@33ba0369
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean:77) - Initializing JpaMetamodelMappingContext…
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.c.JpaMetamodelMappingContextFactoryBean:84) - Finished initializing JpaMetamodelMappingContext!
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.UserRepository…
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByResetToken
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByResetToken
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByResetToken
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByFirstNameAndLastName
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findUser
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByIdIn
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByIdIn
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByIdIn
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByVendorId
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByUsernameOrEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.findByUsernameOrEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.findByUsernameOrEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findListOfUsers
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByAgentId
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method existsByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.existsByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.existsByEmail
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method existsByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query User.existsByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query User.existsByUsername
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findUserByIdToActiveOrInactive
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findFirstAdmin
-2022-07-29 15:33:58 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.UserRepository.
-2022-07-29 15:33:58 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@2f80850e
-2022-07-29 15:33:59 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository…
-2022-07-29 15:33:59 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findOneEmailDetails
-2022-07-29 15:33:59 DEBUG [localhost-startStop-1] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findOne
-2022-07-29 15:33:59 DEBUG [localhost-startStop-1] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.AgentRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findListOfAgents
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findAgentById
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.AgentRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.RoleRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findByName
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.NamedQuery:138) - Looking up named query Role.findByName
-2022-07-29 15:33:59 DEBUG [HikariPool-1 connection adder] (c.z.h.p.HikariPool$PoolEntryCreator:702) - HikariPool-1 - Added connection com.mysql.jdbc.JDBC4Connection@46c3fbf1
-2022-07-29 15:33:59 DEBUG [HikariPool-1 connection adder] (c.z.h.pool.HikariPool:404) - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.NamedQuery:119) - Did not find named query Role.findByName
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.RoleRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findGroupAgentsByName
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findGroupAgentsById
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.j.r.q.JpaQueryFactory:55) - Looking up query for method findBusinessFunctionsById
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.ScreensRepository.
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:292) - Initializing repository instance for com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository…
-2022-07-29 15:33:59 DEBUG [restartedMain] (o.s.d.r.c.s.RepositoryFactorySupport:331) - Finished creation of repository instance for com.foucsr.ticketmanager.mysql.database.repository.UnassignedTicketTimeRepository.
-2022-07-29 15:34:00 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:34:00 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Starting ProtocolHandler ["http-nio-9090"]
-2022-07-29 15:34:00 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Using a shared selector for servlet write/read
-2022-07-29 15:34:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:34:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:35:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:35:40 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:35:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:36:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:36:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:37:20 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:37:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:37:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:38:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:38:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:39:00 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:39:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:39:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:40:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:40:40 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:40:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:41:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:41:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:42:20 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:42:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:42:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:43:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:43:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:44:00 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:44:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:44:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:45:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:45:40 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:45:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:46:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:46:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:47:20 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:47:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:47:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:48:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:48:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:49:00 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:49:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:49:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:50:25 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:50:40 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:50:55 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:51:26 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:51:56 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:52:20 INFO  [pool-1-thread-1] (c.f.t.util.JobSchedule:25) - Scheduler Running on every 3 minutes 
-
-2022-07-29 15:52:26 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2022-07-29 15:52:56 DEBUG [HikariPool-1 housekeeper] (c.z.h.pool.HikariPool:404) - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1119) - HikariPool-1 - configuration:
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - allowPoolSuspension.............false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - autoCommit......................true
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - catalog.........................none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionInitSql...............none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTestQuery.............none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - connectionTimeout...............30000
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSource......................none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceClassName.............none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceJNDI..................none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - dataSourceProperties............{password=<masked>}
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - driverClassName................."com.mysql.jdbc.Driver"
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckProperties...........{}
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - healthCheckRegistry.............none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - idleTimeout.....................600000
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailFast..........true
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - initializationFailTimeout.......1
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - isolateInternalQueries..........false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbc4ConnectionTest.............false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - jdbcUrl.........................jdbc:mysql://122.165.191.124:3306/ticket_manager_dev?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - leakDetectionThreshold..........0
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maxLifetime.....................1800000
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - maximumPoolSize.................10
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricRegistry..................none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - metricsTrackerFactory...........none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - minimumIdle.....................10
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - password........................<masked>
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - poolName........................"HikariPool-1"
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - readOnly........................false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - registerMbeans..................false
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutor...............none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - scheduledExecutorService........internal
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - schema..........................none
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - threadFactory...................internal
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - transactionIsolation............default
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - username........................"demo"
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.HikariConfig:1151) - validationTimeout...............5000
+2022-08-05 10:12:58 INFO  [localhost-startStop-1] (c.z.h.HikariDataSource:110) - HikariPool-1 - Starting...
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.hikari.pool.PoolBase:379) - HikariPool-1 - Failed to create/setup connection: Public Key Retrieval is not allowed
+2022-08-05 10:12:58 DEBUG [localhost-startStop-1] (c.z.h.pool.HikariPool:480) - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:59 ERROR [localhost-startStop-1] (c.z.h.pool.HikariPool:567) - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:878)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:874)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1777)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:259)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:233)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:242)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:210)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:861)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:888)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:626)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:445)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1246)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:81)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1420)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1410)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.authentication.CachingSha2PasswordPlugin.nextAuthenticationStep(CachingSha2PasswordPlugin.java:130)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1775)
+	... 119 common frames omitted
+2022-08-05 10:12:59 INFO  [restartedMain] (o.a.j.l.DirectJDKLog:180) - Stopping service [Tomcat]

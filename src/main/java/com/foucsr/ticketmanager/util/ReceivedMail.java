@@ -51,7 +51,7 @@ public class ReceivedMail {
 			
 			emailSession.getProperties();
 			
-			String propvider = "imap";
+			String propvider = "imap";//Smtp
 			
         	Provider props =emailSession.getProvider(propvider);
 
