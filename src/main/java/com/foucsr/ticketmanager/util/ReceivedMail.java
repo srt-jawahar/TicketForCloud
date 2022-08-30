@@ -22,30 +22,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.foucsr.ticketmanager.mysql.database.model.EmailDetails;
+import com.foucsr.ticketmanager.mysql.database.model.ReceiveEmail;
 import com.foucsr.ticketmanager.mysql.database.repository.EmailDetailsRepository;
+import com.foucsr.ticketmanager.mysql.database.repository.ReceiveEmailRepository;
 
 @Service
 public class ReceivedMail {
 	
 	@Autowired
-	EmailDetailsRepository emailDetailsRepository;
+	ReceiveEmailRepository receiveEmailRepository;
 
-	public EmailDetails emailDetails;
+	public ReceiveEmail receiveEmail;
 	
-	public  void receiveEmail(EmailSubject emailSubject) {
+	public  void receiveEmail(ReceiveSubject receiveSubject) {
 		
 		
 		try {
 			
 			try {
-				emailSubject = EmailSubject.getInstance(emailDetailsRepository);
+				receiveSubject = ReceiveSubject.getInstance(receiveEmailRepository);
 				
 			} catch (InvalidKeyException | NoSuchAlgorithmException | NoSuchPaddingException
 					| InvalidKeySpecException e) {
 				e.printStackTrace();
 			}
 			
-			Properties prop = emailSubject.getProps();
+			Properties prop = receiveSubject.getProps();
 		
 			Session emailSession = Session.getDefaultInstance(prop);
 			
@@ -55,9 +57,9 @@ public class ReceivedMail {
 			
         	Provider props =emailSession.getProvider(propvider);
 
-        	String host = emailSubject.getHost();
-			String username = emailSubject.getUsername();
-		    String password = emailSubject.getPassword();
+        	String host = receiveSubject.getHost();
+			String username = receiveSubject.getUsername();
+		    String password = receiveSubject.getPassword();
 			
         	Store store = emailSession.getStore(props);
 	                                      

@@ -13,7 +13,7 @@ public class JobSchedule {
 	@Autowired
    public ReceivedMail receivedMail;
 	
-	EmailSubject emailSubject;
+	ReceiveSubject receiveSubject;
 	
 	Logger log = LoggerFactory.getLogger(JobSchedule.class);
   
@@ -24,11 +24,11 @@ public class JobSchedule {
 			
 			log.info("Scheduler Running on every 1 minutes " + "\n");
 			
-			receivedMail.receiveEmail(emailSubject);
+			receivedMail.receiveEmail(receiveSubject);
 			
 			
 		} catch (Exception e) {
-			log.error("***************** Error while move data from Oracle to Mysql  *********************\n" + e);
+			log.error("***************** Error while move mail to Ticketing Application  *********************\n" + e);
 		}
 	}
 

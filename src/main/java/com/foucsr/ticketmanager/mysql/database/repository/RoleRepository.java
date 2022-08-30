@@ -12,5 +12,6 @@ import com.foucsr.ticketmanager.mysql.database.model.Role;
  */
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Long> {
+	
     Optional<Role> findByName(String roleName);
 }

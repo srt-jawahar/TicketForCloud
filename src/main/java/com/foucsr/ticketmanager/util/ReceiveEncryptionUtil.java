@@ -1,3 +1,4 @@
+
 package com.foucsr.ticketmanager.util;
 
 import java.io.UnsupportedEncodingException;
@@ -21,7 +22,7 @@ import org.springframework.stereotype.Component;
 import com.foucsr.ticketmanager.mysql.database.model.EmailDetails;
 import com.foucsr.ticketmanager.mysql.database.model.ReceiveEmail;
 
-public class EncryptionUtil {
+public class ReceiveEncryptionUtil {
 
 
 	private String unicode_format = "UTF8";
@@ -42,9 +43,9 @@ public class EncryptionUtil {
 
 	SecretKey key;
 
-	private static EncryptionUtil encryptionUtil;
+	private static ReceiveEncryptionUtil encryptionUtil;
 
-	public EncryptionUtil() throws UnsupportedEncodingException, InvalidKeyException, NoSuchAlgorithmException,
+	public ReceiveEncryptionUtil() throws UnsupportedEncodingException, InvalidKeyException, NoSuchAlgorithmException,
 			NoSuchPaddingException, InvalidKeySpecException {
 
 		myEncryptionScheme = desede_encryption_scheme;
@@ -55,11 +56,11 @@ public class EncryptionUtil {
 		key = skf.generateSecret(ks);
 	}
 
-	public static EncryptionUtil getInstance() throws UnsupportedEncodingException, InvalidKeyException,
+	public static ReceiveEncryptionUtil getInstance() throws UnsupportedEncodingException, InvalidKeyException,
 			NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeySpecException {
 
 		if (encryptionUtil == null) {
-			encryptionUtil = new EncryptionUtil();
+			encryptionUtil = new ReceiveEncryptionUtil();
 		}
 		return encryptionUtil;
 	}
@@ -90,21 +91,6 @@ public class EncryptionUtil {
 		return decryptedText;
 	}
 
-	public void encryptEmailDetails(EmailDetails emailDetails) {
-
-		emailDetails.setSmtp_host(encryptionUtil.encrypt(emailDetails.getSmtp_host()));
-		emailDetails.setUsername(encryptionUtil.encrypt(emailDetails.getUsername()));
-		emailDetails.setPassword(encryptionUtil.encrypt(emailDetails.getPassword()));
-
-	}
-
-	public void decryptEmailDetails(EmailDetails emailDetails) {
-
-		emailDetails.setSmtp_host(encryptionUtil.decrypt(emailDetails.getSmtp_host()));
-		emailDetails.setUsername(encryptionUtil.decrypt(emailDetails.getUsername()));
-		emailDetails.setPassword(encryptionUtil.decrypt(emailDetails.getPassword()));
-
-	}
 	public void encryptEmailDetails(ReceiveEmail receiveEmail) {
 
 		receiveEmail.setImap_host(encryptionUtil.encrypt(receiveEmail.getImap_host()));

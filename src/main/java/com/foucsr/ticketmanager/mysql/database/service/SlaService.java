@@ -17,8 +17,10 @@ import com.foucsr.ticketmanager.util.SCAUtil;
 
 @Service
 public class SlaService {
+	
 	@Autowired
 	private SlaRepository slapolicyrepo;
+	
 	public ResponseEntity<?> createOrUpdateSlaPolicy(SlaPolicy slapolicy)
 	{
 		String value ="";

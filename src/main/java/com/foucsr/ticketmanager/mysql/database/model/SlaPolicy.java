@@ -38,9 +38,6 @@ public class SlaPolicy {
 	@Column(name = "ESCALATION_MAIL")
 	private String escalationMail;
 
-	
-
-	
 
 	public Long getSla_Id() {
 		return sla_Id;

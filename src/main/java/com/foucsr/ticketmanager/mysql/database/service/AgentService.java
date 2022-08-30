@@ -18,8 +18,6 @@ import com.foucsr.ticketmanager.mysql.database.repository.AgentRepository;
 import com.foucsr.ticketmanager.payload.ApiResponse;
 import com.foucsr.ticketmanager.util.SCAUtil;
 
-
-
 @Service
 public class AgentService {
 	@Autowired
