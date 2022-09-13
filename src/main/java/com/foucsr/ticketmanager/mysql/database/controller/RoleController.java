@@ -17,16 +17,16 @@ import com.foucsr.ticketmanager.mysql.database.model.Role;
 import com.foucsr.ticketmanager.mysql.database.service.RoleService;
 
 @RestController
-@RequestMapping("/rolesService")
+@RequestMapping("/roles")
 public class RoleController 
 {
 	@Autowired
 	private RoleService roleService;
 	
 	@PostMapping("/createorupdateRoles")
-	public ResponseEntity<?> createorUpdateRoles(@RequestBody Role roles,HttpServletRequest http)
+	public ResponseEntity<?> createorupdateRoles(@RequestBody Role roles,HttpServletRequest http)
 	{
-
+		//return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.CreateorUpdateGroupAgents(groupAgents));
 		ResponseEntity<?> createorupdateRoles = roleService.createOrUpdateRoles(roles);
 		return createorupdateRoles;
 	}

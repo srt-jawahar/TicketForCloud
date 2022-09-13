@@ -35,6 +35,7 @@ import com.foucsr.ticketmanager.mysql.database.service.MapValidationErrorService
 import com.foucsr.ticketmanager.mysql.database.service.UserService;
 import com.foucsr.ticketmanager.payload.ApiResponse;
 import com.foucsr.ticketmanager.payload.DeleteUserRequest;
+import com.foucsr.ticketmanager.payload.MultipleDeleteRequest;
 import com.foucsr.ticketmanager.payload.UpdateUserRequest;
 import com.foucsr.ticketmanager.payload.UserProfile;
 import com.foucsr.ticketmanager.payload.UserSummary;
@@ -148,7 +149,7 @@ public class UserController {
 		return ResponseEntity.created(location).body(new ApiResponse(true, "User Updated successfully"));
 	}
 	
-	@DeleteMapping("/{userId}")
+	@DeleteMapping("delete/{userId}")
 	public ResponseEntity<?> deleteUser(@PathVariable long userId, Principal principal) {
 		
 		userService.deleteUserById(userId);
@@ -160,6 +161,34 @@ public class UserController {
 			Principal principal) {
 		return userService.activeOrInactiveUser(deleteRequest);
 
+	}
+	
+	@PostMapping("/deleteMultipleUsers")
+	public ResponseEntity<?> multipleDeleteGroups(@RequestBody MultipleDeleteRequest multipleDeleteRequest)
+	{
+		try
+		{
+			Long ids[] = multipleDeleteRequest.getIds();
+			
+			for(int i=0;i<ids.length;i++)
+			{
+				if(!(userRepository.existsById(ids[i])))
+				{
+					return new ResponseEntity(new ApiResponse(false, "User does not exist"),HttpStatus.BAD_REQUEST);
+				}
+				
+				userRepository.deleteByIdMappings(ids[i]);
+				
+			userService.deleteUserById(ids[i]);
+			}
+		}
+		catch(Exception e)
+		{
+			return new ResponseEntity(new ApiResponse(false, " Unable to Delete User"),
+					HttpStatus.BAD_REQUEST);
+		}
+		
+		return new ResponseEntity(new ApiResponse(true, "Users deleted successfully"),HttpStatus.OK);
 	}
 	
 }

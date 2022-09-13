@@ -12,7 +12,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
+import com.foucsr.ticketmanager.exception.AppException;
 import com.foucsr.ticketmanager.exception.IdNotFoundException;
 import com.foucsr.ticketmanager.mysql.database.model.BusinessFunctions;
 import com.foucsr.ticketmanager.mysql.database.model.GroupAgents;
@@ -31,9 +33,11 @@ public class GroupAgentService {
 	private BusinessFunctionRepository businessfunctrepository;
 
 	// GET BY ID
-	public GroupAgents getGroupAgents(Long groupAgentId) throws IdNotFoundException {
-		return groupAgentRepository.findById(groupAgentId)
+	public ResponseEntity<GroupAgents> getGroupAgents(Long groupAgentId) throws IdNotFoundException {
+		GroupAgents getGroups = groupAgentRepository.findById(groupAgentId)
 				.orElseThrow(() -> new IdNotFoundException("Given Id not Found"));
+		
+		return new ResponseEntity(getGroups,HttpStatus.OK);
 	}
 
 	// GET BY NAME
@@ -43,11 +47,11 @@ public class GroupAgentService {
 	}
 
 	// DELETE BY ID
-	public String deleteGroupAgents(Long groupAgentId) throws IdNotFoundException {
-		GroupAgents delGroup = groupAgentRepository.findById(groupAgentId)
-				.orElseThrow(() -> new IdNotFoundException("Given Id not Found"));
-		groupAgentRepository.delete(delGroup);
-		return "The Given GroupAgent ID " + groupAgentId + " is deleted successfully...!!!";
+	public String deleteGroupAgents(Long groupAgentId)
+	{
+		GroupAgents delgroups = groupAgentRepository.findById(groupAgentId).orElseThrow(() -> new AppException("Group Not Found"));
+		groupAgentRepository.delete(delgroups);
+		return "Deleted Successfully";
 	}
 
 	// DELETE ALL
@@ -58,10 +62,15 @@ public class GroupAgentService {
 		groupAgentRepository.deleteAll();
 		return "All entries was deleted successfully...!!!";
 	}
+	
+	// MULTIPLE DELETE
+	
 
 	Logger log = LoggerFactory.getLogger(GroupAgentService.class);
 	SCAUtil sca = new SCAUtil();
 
+	// CREATE OR UPDATE
+	
 	public ResponseEntity<?> CreateorUpdateGroupAgents(GroupAgents groupAgents, HttpServletRequest http) {
 
 		if (!"Y".equalsIgnoreCase(groupAgents.getTicketAssignment())
@@ -124,35 +133,7 @@ public class GroupAgentService {
 		return new ResponseEntity(groups, HttpStatus.OK);
 	}
 
-	// CREATE BUSINESS FUNCTIONS --
-
-	public ResponseEntity<?> createorUpdateBusinessFunctions(BusinessFunctions businessfunct, HttpServletRequest http) {
-
-		try {
-			Long businessId = businessfunct.getBusinessId();
-
-			if (businessfunct.getBusinessId() != null) {
-				BusinessFunctions isbusinessfunctions = businessfunctrepository.findBusinessFunctionsById(businessId);
-
-				if (isbusinessfunctions == null) {
-					return new ResponseEntity(new ApiResponse(false, "No Groups Found"),
-							HttpStatus.REQUESTED_RANGE_NOT_SATISFIABLE);
-				}
-			}
-
-			businessfunctrepository.save(businessfunct);
-		} catch (Exception e) {
-			log.error("***!!! not able to fetch Groups!!! ***");
-
-			String msg = sca.getErrorMessage(e);
-
-			return new ResponseEntity(new ApiResponse(false, "Business functions not saved" + msg),
-					HttpStatus.BAD_REQUEST);
-		}
-
-		return new ResponseEntity(businessfunct, HttpStatus.OK);
-
-	}
+	// GET BUSINESS FUNCTIONS --
 
 	public ResponseEntity<?> getBusinessFunctions() {
 
@@ -200,5 +181,41 @@ public class GroupAgentService {
 		}
 
 		return new ResponseEntity(unassignticket, HttpStatus.OK);
+	}
+	
+//	public ResponseEntity<?> getGroupsLOVList()
+//	{
+//		TicketingLOV ticketingLOV = new TicketingLOV();
+//		SCAUtil sca = new SCAUtil();
+//		
+//		try
+//		{
+//			ticketingLOV.setTickettimings(getTicketTimings());
+//			ticketingLOV.setBusinessfunct(getBusinessFunction());
+//		}catch(Exception e)
+//		{
+//			String msg = sca.getErrorMessage(e);
+//			return new ResponseEntity(new ApiResponse(false, "Unable to get LOV"), HttpStatus.BAD_REQUEST);
+//		}
+//		return new ResponseEntity(ticketingLOV, HttpStatus.OK);
+//	}
+	
+	private List<String> getTicketTimings()
+	{
+		List<String> ticketTime = new ArrayList<>();
+		ticketTime.add("15 minutes");
+		ticketTime.add("30 minutes");
+		ticketTime.add("1 hour");
+		ticketTime.add("3 hours");
+		return ticketTime;
+	}
+	
+	private List<String> getBusinessFunction()
+	{
+		List<String> businessfunct = new ArrayList<>();
+		businessfunct.add("Finance");
+		businessfunct.add("Marketing");
+		businessfunct.add("Legal");
+		return businessfunct;
 	}
 }

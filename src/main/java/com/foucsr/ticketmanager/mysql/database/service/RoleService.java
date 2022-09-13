@@ -32,13 +32,11 @@ public class RoleService
 		try
 		{
 //			Long id = (long) 301;
-			
 			String name = role.getName();
 			
 			if(name != null)
 			{
 				Optional<Role> roleNames = roleRepository.findByName(name);
-				
 				if(name == null)
 				{
 					return new ResponseEntity(new ApiResponse(false, "No Roles Found"),
@@ -52,7 +50,7 @@ public class RoleService
 		{
 			String msg = sca.getErrorMessage(e);
 			
-			return new ResponseEntity(new ApiResponse(false, "Unable to save Roles" + msg),
+			return new ResponseEntity(new ApiResponse(false, "Unable to save ROles" + msg),
 					HttpStatus.BAD_REQUEST);
 		}
 		return new ResponseEntity(role,HttpStatus.CREATED);
@@ -71,11 +69,11 @@ public class RoleService
 			}
 		} catch (Exception e) {
 			SCAUtil sca = new SCAUtil();
-			log.error("***!!! Not able to fetch roleList!!! ***");
+			log.error("***!!! not able to fetch roleList!!! ***");
 
 			String msg = sca.getErrorMessage(e);
 
-			return new ResponseEntity(new ApiResponse(false, "Couldnt get Roles!" + msg),
+			return new ResponseEntity(new ApiResponse(false, "Couldn't get Roles!" + msg),
 					HttpStatus.BAD_REQUEST);
 
 		}
@@ -85,7 +83,7 @@ public class RoleService
 	// GET BY ROLE ID
 	public ResponseEntity<Role> getRolebyId(Long id) throws IdNotFoundException {
 		Role getRoles = roleRepository.findById(id)
-				.orElseThrow(() -> new IdNotFoundException("Given Role Id not Found"));
+				.orElseThrow(() -> new IdNotFoundException("Given Id not Found"));
 		
 		return new ResponseEntity(getRoles,HttpStatus.OK);
 	}
@@ -93,7 +91,7 @@ public class RoleService
 	// DELETE BY ID
 		public ResponseEntity<?> deleteRoles(Long id) throws IdNotFoundException {
 			Role delRole = roleRepository.findById(id)
-					.orElseThrow(() -> new IdNotFoundException("Role does not Exsist"));
+					.orElseThrow(() -> new IdNotFoundException("Given Role Id not Found"));
 			roleRepository.delete(delRole);
 			return new ResponseEntity("Deleted Successfully", HttpStatus.OK);
 		}

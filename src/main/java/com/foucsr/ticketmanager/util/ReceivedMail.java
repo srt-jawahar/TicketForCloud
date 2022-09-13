@@ -86,7 +86,7 @@ public class ReceivedMail {
 				System.out.println(" Subject : " + message.getSubject() + "\n");
 
 				String sub = message.getSubject();
-				String name = "M1292";
+				String name = "M1299";
 
 				boolean subject = sub.contains(name);
 

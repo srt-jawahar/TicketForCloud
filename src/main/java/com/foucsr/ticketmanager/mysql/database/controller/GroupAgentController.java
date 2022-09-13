@@ -25,6 +25,7 @@ import com.foucsr.ticketmanager.mysql.database.model.GroupAgents;
 import com.foucsr.ticketmanager.mysql.database.model.UnAssignedTicket;
 import com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository;
 import com.foucsr.ticketmanager.mysql.database.service.GroupAgentService;
+import com.foucsr.ticketmanager.payload.ApiResponse;
 
 @RestController
 @RequestMapping("groupAgents")
@@ -32,11 +33,13 @@ public class GroupAgentController
 {
 	@Autowired
 	private GroupAgentService groupAgentService;
+
+	@Autowired
+	private GroupAgentRepository groupAgentRepository;
 	
-	@DeleteMapping("delete/{groupAgentId}")
-	public ResponseEntity<String> deleteGroupAgents(@PathVariable Long groupAgentId)
-	{	
-		return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.deleteGroupAgents(groupAgentId));
+	@DeleteMapping("/delete/{groupAgentId}")
+	public String deleteGroup(@PathVariable long groupAgentId, Principal principal) {
+		return groupAgentService.deleteGroupAgents(groupAgentId);
 	}
 	
 	@DeleteMapping("removeAll")
@@ -45,10 +48,13 @@ public class GroupAgentController
 		return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.deleteAllGroupAgents());
 	}
 	
+	// Delete ALL
+	
 	@GetMapping("get/{groupAgentId}")
-	public ResponseEntity<GroupAgents> getGroupAgents(@PathVariable Long groupAgentId)
+	public ResponseEntity<?> getGroupAgents(@PathVariable Long groupAgentId)
 	{
-		return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.getGroupAgents(groupAgentId));
+		ResponseEntity<?> getgroup = groupAgentService.getGroupAgents(groupAgentId);
+		return getgroup;
 	}
 	
 	@GetMapping("getName/{groupAgentName}")
@@ -104,24 +110,26 @@ public class GroupAgentController
 		return businessfunct;
 	}
 	
-	@PostMapping("savebusiness")
-	public ResponseEntity<?> createorupdateBussFunct(@RequestBody BusinessFunctions businessfunct,HttpServletRequest http)
-	{
-		ResponseEntity<?> createorupdateBussFunctions = groupAgentService.createorUpdateBusinessFunctions(businessfunct, http);
-		return createorupdateBussFunctions;
-	}
+//	@GetMapping("/getLOVList")
+//	public ResponseEntity<?> getTicketingLOVList(Principal principal)
+//	{
+//		ResponseEntity<?> message = groupAgentService.getGroupsLOVList();
+//		return message;
+//	}
 	
-	@GetMapping("getFunctions")
+	@GetMapping("/getFunctions")
 	public ResponseEntity<?> getBusinessFunctions1()
 	{
+//		getGroupAgents();
 		ResponseEntity<?> getFunctions = groupAgentService.getBusinessFunctions();
 		return getFunctions;	
 	}
 	
-	@GetMapping("getListofUnassignedTicket")
+	@GetMapping("/getListofUnassignedTicket")
 	public ResponseEntity<?> getUnassignedTicket()
 	{
-		return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.getUnAssignedTicket());
+		ResponseEntity<?> unassignedTicket = groupAgentService.getUnAssignedTicket();
+		return unassignedTicket;
 	}
-	
+
 }

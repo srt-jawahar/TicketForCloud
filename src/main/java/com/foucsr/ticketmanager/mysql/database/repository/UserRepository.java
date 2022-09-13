@@ -3,7 +3,10 @@ package com.foucsr.ticketmanager.mysql.database.repository;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -66,6 +69,11 @@ public interface UserRepository extends JpaRepository<User, Long> {
    
    @Query(value = "SELECT * FROM USER_LOGIN_DETAILS WHERE id = :id ", nativeQuery = true)
    User findUserByIdToActiveOrInactive(@Param("id") long id);
+   
+   @Transactional
+	@Modifying
+	@Query(value = "DELETE FROM ROLES_MAP_BY_USERS WHERE user_id=:user_id", nativeQuery = true)
+	void deleteByIdMappings(@Param("user_id")Long user_id);
    
 
 }
