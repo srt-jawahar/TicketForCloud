@@ -1,5 +1,7 @@
 package com.foucsr.ticketmanager.mysql.database.repository;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -23,5 +25,8 @@ public interface GroupAgentRepository extends JpaRepository<GroupAgents, Long>
 	@Modifying
 	@Query(value = "DELETE FROM GROUP_AGENTS WHERE GROUPAGENT_ID=:groupAgentId", nativeQuery = true)
 	void deleteByIdMappings(@Param("groupAgentId")Long groupAgentId);
+	
+	@Query(value = "SELECT GROUPAGENT_NAME from GROUP_AGENTS", nativeQuery = true)
+	List<String> getListOfGroupNames();
 	
 }

@@ -218,4 +218,26 @@ public class GroupAgentService {
 		businessfunct.add("Legal");
 		return businessfunct;
 	}
+	
+	// GET LIST OF GROUP NAMES
+	
+	public ResponseEntity<?> getListofGroupNames()
+	{
+		List<String> groupNames = null;
+		SCAUtil sca = new SCAUtil();
+		
+		try {
+			groupNames = groupAgentRepository.getListOfGroupNames();
+			
+			if(groupNames == null) {
+				groupNames = new ArrayList<>();
+			}
+		} catch(Exception e)
+		{
+			String msg = sca.getErrorMessage(e);
+			return new ResponseEntity(new ApiResponse(false, "Unable to get Group"),HttpStatus.BAD_REQUEST);
+		}
+		
+		return new ResponseEntity(groupNames, HttpStatus.OK);
+	}
 }

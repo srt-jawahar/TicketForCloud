@@ -1,10 +1,17 @@
 package com.foucsr.ticketmanager.mysql.database.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
@@ -40,6 +47,13 @@ public class GroupAgents
 	
 	@Column(name="UNASSIGNED_TICKET_TIME")
 	private String unassignedTicketTime;
+	
+	
+	@ManyToMany(targetEntity = Agent.class, cascade = CascadeType.ALL)
+	@JoinTable(name = "mappedAgents",
+				joinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENT_ID"),
+				inverseJoinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENTID"))
+	private List<Agent> agents;
 	
 	// GENERATE SETTERS AND GETTERS 
 	
@@ -90,6 +104,14 @@ public class GroupAgents
 
 	public void setUnassignedTicketTime(String unassignedTicketTime) {
 		this.unassignedTicketTime = unassignedTicketTime;
+	}
+
+	public List<Agent> getAgents() {
+		return agents;
+	}
+
+	public void setAgents(List<Agent> agents) {
+		this.agents = agents;
 	}
 
 	public GroupAgents(Long groupAgentId, @Size(min = 3, max = 10) @NotBlank String groupAgentName,

@@ -131,5 +131,12 @@ public class GroupAgentController
 		ResponseEntity<?> unassignedTicket = groupAgentService.getUnAssignedTicket();
 		return unassignedTicket;
 	}
+	
+	@GetMapping("/getListofGroupNames")
+	public ResponseEntity<?> getListOfGroupNames()
+	{
+		ResponseEntity<?> mess = groupAgentService.getListofGroupNames();
+		return mess;
+	}
 
 }

@@ -1,10 +1,16 @@
 package com.foucsr.ticketmanager.mysql.database.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -37,6 +43,11 @@ private Long mobileNumber;
 @Column(name="EMAIL")
 private String email;
 
+@ManyToMany(targetEntity = GroupAgents.class, cascade = CascadeType.ALL)
+@JoinTable(name = "mappedAgents",
+			joinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENT_ID"),
+			inverseJoinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENTID"))
+private List<GroupAgents> groups;
 
 public String getEmail() {
 	return email;
@@ -109,6 +120,7 @@ public Agent() {
 	super();
 	// TODO Auto-generated constructor stub
 }
+
 
 
 
