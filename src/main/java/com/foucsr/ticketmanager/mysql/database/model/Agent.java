@@ -43,11 +43,11 @@ private Long mobileNumber;
 @Column(name="EMAIL")
 private String email;
 
-@ManyToMany(targetEntity = GroupAgents.class, cascade = CascadeType.ALL)
-@JoinTable(name = "mappedAgents",
-			joinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENT_ID"),
-			inverseJoinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENTID"))
-private List<GroupAgents> groups;
+//@ManyToMany(targetEntity = GroupAgents.class, cascade = CascadeType.ALL)
+//@JoinTable(name = "mappedAgents",
+//			joinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENT_ID"),
+//			inverseJoinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENTID"))
+//private List<GroupAgents> groups;
 
 public String getEmail() {
 	return email;
