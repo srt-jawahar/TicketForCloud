@@ -40,8 +40,6 @@ public class AgentService {
 			value="lastName";
 		if(agentdetails.getMobileNumber()==null)
 			value="mobileNumber";
-		if(agentdetails.getLandNumber()==null)
-			value="landNumber";
 		if(agentdetails.getTitle()==null)
 			value="title";
 		if(agentdetails.getEmail()==null)
@@ -94,6 +92,29 @@ public class AgentService {
 				return new ResponseEntity<Agent>( HttpStatus.NOT_FOUND);
 			}
 			
+		}
+		
+		
+	// GET ALL AGENT NAMES
+	
+		public ResponseEntity<?> getListofAgentNames()
+		{
+			List<String> agentNames = null;
+			SCAUtil sca = new SCAUtil();
+			
+			try {
+				agentNames = agentRepo.getAgentNamebyGroup();
+				
+				if(agentNames == null) {
+					agentNames = new ArrayList<>();
+				}
+			} catch(Exception e)
+			{
+				String msg = sca.getErrorMessage(e);
+				return new ResponseEntity(new ApiResponse(false, "Unable to get Agent"),HttpStatus.BAD_REQUEST);
+			}
+			
+			return new ResponseEntity(agentNames, HttpStatus.OK);
 		}
 	
 	

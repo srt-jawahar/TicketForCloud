@@ -24,7 +24,7 @@ import com.foucsr.ticketmanager.mysql.database.service.AgentService;
 import com.foucsr.ticketmanager.mysql.database.service.MapValidationErrorService;
 
 @RestController
-@RequestMapping("/api/Agent/groupAgents")
+@RequestMapping("/Agent")
 public class AgentController {
 	
 @Autowired 
@@ -93,5 +93,14 @@ private Agent update(@RequestBody Agent agents)
 @RequestMapping("/showpage")
 public String showpage1() {
       return "test";
-} 
+}
+
+
+@GetMapping("/getListofAgentNames")
+public ResponseEntity<?> getListOfAgentNames()
+{
+	ResponseEntity<?> mess = agentService.getListofAgentNames();
+	return mess;
+}
+
 }

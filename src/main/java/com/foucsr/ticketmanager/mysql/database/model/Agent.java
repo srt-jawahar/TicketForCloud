@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -34,8 +36,8 @@ private String lastName;
 @Column(name="TITLE")
 private String title;
 
-@Column(name="LANDNUMBER")
-private Long landNumber;
+@Column(name="PHONENUMBER")
+private Long phoneNumber;
 
 @Column(name="MOBILENUMBER")
 private Long mobileNumber;
@@ -47,6 +49,10 @@ private String email;
 //@JoinTable(name = "mappedAgents",
 //			joinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENT_ID"),
 //			inverseJoinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENTID"))
+//private List<GroupAgents> groups;
+
+//@OneToMany(targetEntity = GroupAgents.class,cascade = CascadeType.ALL)
+//@JoinColumn(name = "agentwithGroups",referencedColumnName = "AGENTID")
 //private List<GroupAgents> groups;
 
 public String getEmail() {
@@ -89,12 +95,14 @@ public void setTitle(String title) {
 	this.title = title;
 }
 
-public Long getLandNumber() {
-	return landNumber;
+
+
+public Long getPhoneNumber() {
+	return phoneNumber;
 }
 
-public void setLandNumber(Long landNumber) {
-	this.landNumber = landNumber;
+public void setPhoneNumber(Long phoneNumber) {
+	this.phoneNumber = phoneNumber;
 }
 
 public Long getMobileNumber() {
@@ -111,7 +119,6 @@ public Agent(Long agent_id, String firstName, String lastName, String title, Lon
 	this.firstName = firstName;
 	this.lastName = lastName;
 	this.title = title;
-	this.landNumber = landNumber;
 	this.mobileNumber = mobileNumber;
 	this.email = email;
 }

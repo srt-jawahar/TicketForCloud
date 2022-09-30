@@ -49,10 +49,14 @@ public class GroupAgents
 	private String unassignedTicketTime;
 	
 	
-	@ManyToMany(targetEntity = Agent.class, cascade = CascadeType.ALL)
-	@JoinTable(name = "mappedAgents",
-				joinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENT_ID"),
-				inverseJoinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENTID"))
+//	@ManyToMany(targetEntity = Agent.class, cascade = CascadeType.ALL)
+//	@JoinTable(name = "mappedAgents",
+//				joinColumns = @JoinColumn(name = "groupAgentId", referencedColumnName = "GROUPAGENT_ID"),
+//				inverseJoinColumns = @JoinColumn(name = "agent_id", referencedColumnName = "AGENTID"))
+//	private List<Agent> agents;
+	
+	@OneToMany(targetEntity = Agent.class,cascade = CascadeType.ALL)
+    @JoinColumn(name = "mappedAgentId",referencedColumnName = "GROUPAGENT_ID")
 	private List<Agent> agents;
 	
 	// GENERATE SETTERS AND GETTERS 
