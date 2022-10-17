@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 18009402583,
+      "name": "PP",
+      "first_name": "SUPPORT",
+      "email": "Support@123.com",
+      "last_active": "yesterday"
+    },
+    {
+      "id": 1803243243,
+      "name": "MM",
+      "first_name": "Alpha",
+      "email": "abcd@123.com",
+      "last_active": "Friday"
+    },
+    {
+      "id": 1800945547874602583,
+      "name": "AA",
+      "first_name": "Beta",
+      "email": "xyz@123.com",
+      "last_active": "Today"
+    }
+  ]
+}

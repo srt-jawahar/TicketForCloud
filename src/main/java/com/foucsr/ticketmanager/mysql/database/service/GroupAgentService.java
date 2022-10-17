@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.foucsr.ticketmanager.exception.AppException;
 import com.foucsr.ticketmanager.exception.IdNotFoundException;
+import com.foucsr.ticketmanager.mysql.database.model.Agent;
 import com.foucsr.ticketmanager.mysql.database.model.BusinessFunctions;
 import com.foucsr.ticketmanager.mysql.database.model.GroupAgents;
 import com.foucsr.ticketmanager.mysql.database.model.UnAssignedTicket;
+import com.foucsr.ticketmanager.mysql.database.repository.AgentRepository;
 import com.foucsr.ticketmanager.mysql.database.repository.BusinessFunctionRepository;
 import com.foucsr.ticketmanager.mysql.database.repository.GroupAgentRepository;
 import com.foucsr.ticketmanager.payload.ApiResponse;
@@ -26,8 +28,12 @@ import com.foucsr.ticketmanager.util.SCAUtil;
 
 @Service
 public class GroupAgentService {
+	
 	@Autowired
 	private GroupAgentRepository groupAgentRepository;
+	
+	@Autowired
+	private AgentRepository agentRepo;
 
 	@Autowired
 	private BusinessFunctionRepository businessfunctrepository;
@@ -80,18 +86,29 @@ public class GroupAgentService {
 		}
 
 		try {
+			
+			if(groupAgentRepository.existsByGroupAgentName(groupAgents.getGroupAgentName()))
+			{
+				return new ResponseEntity(new ApiResponse(false, "Group Name Already Taken"), HttpStatus.BAD_REQUEST);
+			}
+			
 			Long groupAgentId = groupAgents.getGroupAgentId();
 
-			if (groupAgents.getGroupAgentId() != null) {
+			if (groupAgentId != null) 
+			{
 				GroupAgents isgroupAgents = groupAgentRepository.findGroupAgentsById(groupAgentId);
 
-				if (isgroupAgents == null) {
+				if (isgroupAgents == null) 
+				{
 					return new ResponseEntity(new ApiResponse(false, "No Groups Found"),
 							HttpStatus.REQUESTED_RANGE_NOT_SATISFIABLE);
 				}
 			}
+			
+
 
 			groupAgentRepository.save(groupAgents);
+			
 
 		}
 

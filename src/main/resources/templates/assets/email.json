@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 18009402583,
+      "name": "SAS Support",
+      "email": "sapsupport@focusrtech.com",
+      "mail_server": "custom server",
+      "group": "ATA MM"
+    },
+    {
+      "id": 18009402583,
+      "name": "ATA Support",
+      "email": "atasupport@focusrtech.com",
+      "mail_server": "Default server",
+      "group": "ATA SS"
+    }
+  ]
+}

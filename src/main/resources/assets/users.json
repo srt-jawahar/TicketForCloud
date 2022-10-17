@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 18009402583,
+      "name": "PP",
+      "role": "user",
+      "email": "Support@123.com",
+      "is_active": "yes"
+    },
+    {
+      "id": 1803243243,
+      "name": "MM",
+      "role": "User",
+      "email": "abcd@123.com",
+      "is_active": "yes"
+    },
+    {
+      "id": 1800945547874602583,
+      "name": "AA",
+      "role": "Admin",
+      "email": "xyz@123.com",
+      "is_active": "No"
+    }
+  ]
+}

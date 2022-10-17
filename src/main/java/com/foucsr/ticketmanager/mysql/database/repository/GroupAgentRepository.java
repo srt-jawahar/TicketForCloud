@@ -29,4 +29,6 @@ public interface GroupAgentRepository extends JpaRepository<GroupAgents, Long>
 	@Query(value = "SELECT GROUPAGENT_NAME from GROUP_AGENTS", nativeQuery = true)
 	List<String> getListOfGroupNames();
 	
+	Boolean existsByGroupAgentName(String groupAgentName);
+	
 }

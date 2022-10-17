@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 18009402583,
+      "name": "Account Admin",
+      "description": "Has complete control over the help desk including access to account or billing related information, and receives invoices.",
+      "agent": "2 agent"
+    },
+    {
+      "id": 1803243243,
+      "name": "Admin",
+      "description": "Can configure all features through the Admin tab, but is restricted from viewing account or billing related information.",
+      "agent": "1 agent"
+    },
+    {
+      "id": 1800945547874602583,
+      "name": "SD Supervisor",
+      "description": "Can perform all agent related activities and access reports, but cannot access or change configurations in the admin tab.",
+      "agent": "1 agent"
+    }
+  ]
+}

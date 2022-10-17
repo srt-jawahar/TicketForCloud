@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Profile-pic-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-62.000000, -66.000000)">
+            <g id="Profile-pic-small" transform="translate(62.000000, 66.000000)">
+                <g id="Profile-pic-small/A">
+                    <rect id="Rectangle" fill="#C8E6C9" x="0" y="0" width="100" height="100"></rect>
+                    <path d="M58.3808594,64 L55.8027344,56.5195312 L45.0605469,56.5195312 L42.4628906,64 L37.9707031,64 L48.1464844,35.8164062 L52.8535156,35.8164062 L63.0292969,64 L58.3808594,64 Z M50.2753906,40.9335938 L46.1738281,52.8476562 L54.6894531,52.8476562 L50.6074219,40.9335938 L50.2753906,40.9335938 Z" id="A" fill="#000000" opacity="0.25"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

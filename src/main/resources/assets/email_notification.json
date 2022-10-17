@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "id": 18009402583,
+      "notification_type": "Requester Notification",
+      "notifications": [
+        {
+          "id": "88989685498",
+          "name": "New ticket created",
+          "is_enable": "true"
+        },
+        {
+          "id": "88989689898",
+          "name": "Agent adds comment to Ticket",
+          "is_enable": "true"
+        },
+        {
+          "id": "88989689898",
+          "name": "Agent closes the Ticket",
+          "is_enable": "true"
+        },
+        {
+          "id": "88989689898",
+          "name": "User Activation Email",
+          "is_enable": "true"
+        },
+        {
+          "id": "8898988999898",
+          "name": "Requested Item Stage Change",
+          "is_enable": "true"
+        }
+      ]
+    },
+    {
+      "id": "180094025467973",
+      "notification_type": "Agent Notification -Ticket"
+    },
+    {
+      "id": 180094025467973,
+      "notification_type": "Reply Templates"
+    },
+    {
+      "id": 180094025467973,
+      "notification_type": "CC Notifications"
+    },
+    {
+      "id": 180094025467973,
+      "notification_type": "Agent Notification-Task"
+    }
+  ]
+}

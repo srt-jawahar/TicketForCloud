@@ -48,7 +48,7 @@ public class GroupAgentController
 		return ResponseEntity.status(HttpStatus.OK).body(groupAgentService.deleteAllGroupAgents());
 	}
 	
-	// Delete ALL
+	
 	
 	@GetMapping("get/{groupAgentId}")
 	public ResponseEntity<?> getGroupAgents(@PathVariable Long groupAgentId)
